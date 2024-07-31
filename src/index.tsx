@@ -20,3 +20,9 @@ const LibraryWithClass = NativeModules.LibraryWithClass
 export function multiply(a: number, b: number): Promise<number> {
   return LibraryWithClass.multiply(a, b);
 }
+
+export class MyClass {
+  multiply(a: number, b: number): number {
+    return a * b
+  }
+}
